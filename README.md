@@ -17,4 +17,4 @@ print(api.query(2016, 11))
 
 ## Article API
 
-For the [Article API](), see Evan Scherlock's [nytimesarticle](https://github.com/evansherlock/nytimesarticle).
+For the [Article API](https://developer.nytimes.com/article_search_v2.json), see Evan Scherlock's [nytimesarticle](https://github.com/evansherlock/nytimesarticle).
