@@ -15,6 +15,12 @@ api = ArchiveAPI('your api key goes here')
 print(api.query(2016, 11))
 ```
 
+## Instllation
+
+```
+python ./setup.py install
+```
+
 ## Article API
 
 For the [Article API](https://developer.nytimes.com/article_search_v2.json), see Evan Scherlock's [nytimesarticle](https://github.com/evansherlock/nytimesarticle).
