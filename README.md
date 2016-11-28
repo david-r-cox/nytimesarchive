@@ -18,7 +18,8 @@ print(api.query(2016, 11))
 ## Instllation
 
 ```
-python ./setup.py install
+sudo pip3 install -e ./nytimesarchive
+# (PyPi integration coming soon)
 ```
 
 ## Article API
