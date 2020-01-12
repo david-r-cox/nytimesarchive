@@ -15,7 +15,9 @@ api = ArchiveAPI('your api key goes here')
 print(api.query(2016, 11))
 ```
 
-## Instllation
+Articles are available from September 1851 onward.
+
+## Installation
 
 ```
 sudo pip3 install -e ./nytimesarchive

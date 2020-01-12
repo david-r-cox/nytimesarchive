@@ -31,10 +31,11 @@ class ArchiveAPI(object):
         :param key: Defaults to the API key used to initialize the ArchiveAPI class.
         """
         if not key: key = self.key
-        if (year < 1882) or not (0 < month < 13):
-            # currently the Archive API only supports year >= 1882
-            exception_str = 'Invalid query: See http://developer.nytimes.com/archive_api.json'
-            raise InvalidQueryException(exception_str)
+        exception_str = 'Invalid query: See https://developer.nytimes.com/docs/archive-product/1/overview'
+        if not (0 < month < 13):
+            raise InvalidQueryException('Month must be between 1 and 12, inclusive.\n{}'.format(exception_str)) 
+        if (year, month) < (1851, 9):
+            raise InvalidQueryException('Articles are only available from September 1851 and later.\n{}'.format(exception_str))
         url = self.root.format(year, month, key)
         r = requests.get(url)
         return r.json()
