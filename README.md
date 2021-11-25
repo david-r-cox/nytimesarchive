@@ -17,13 +17,6 @@ print(api.query(2016, 11))
 
 Articles are available from September 1851 onward.
 
-## Installation
-
-```
-sudo pip3 install -e ./nytimesarchive
-# (PyPi integration coming soon)
-```
-
 ## Article API
 
 For the [Article API](https://developer.nytimes.com/article_search_v2.json), see Evan Scherlock's [nytimesarticle](https://github.com/evansherlock/nytimesarticle).
